@@ -11,7 +11,7 @@ body {
   position: relative;
   width: 100vw; 
   height: 100dvh; 
-  background-color: #ccc;
+  background-color: #222;
   overflow: hidden; 
   display: flex;
   align-items: center;
@@ -20,20 +20,20 @@ body {
 }
 
 .foreground {
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 100dvh;
     width: 100vw;
-    background-color: rgba(0,0,0,0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    backdrop-filter: blur(5px);
+    
+    
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.85) 100%);
 }
-
 .foreground>h1 {
     font-size: 4rem;
     font-weight: 900; /* Maximum boldness */
