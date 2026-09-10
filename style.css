@@ -16,6 +16,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  container-type: size;
 }
 
 .foreground {
@@ -34,15 +35,21 @@ body {
 }
 
 .foreground>h1 {
-    font-size:4rem;
-    font-weight: bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    background-color: black;
-    padding: 0px 10px;
-    border-radius: 10px;
+    font-size: 4rem;
+    font-weight: 900; /* Maximum boldness */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    background-color: #111111;
+    
+    padding: 1.5rem 4rem; 
+    border-radius: 8px;
+    border: 4px solid #ffcc00; 
+    
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); 
 }
-
 .rect {
   position: absolute;
   width: calc(hypot(100cqw, 100cqh) + 60px);
