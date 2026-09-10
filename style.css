@@ -11,7 +11,7 @@ body {
   position: relative;
   width: 100vw; 
   height: 100dvh; 
-  background-color: #222;
+  background-color: #ccc;
   overflow: hidden; 
   display: flex;
   align-items: center;
@@ -38,12 +38,17 @@ body {
     font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
+    background-color: black;
+    padding: 0px 10px;
+    border-radius: 10px;
 }
 
 .rect {
   position: absolute;
-  width: 150%; 
-  height: 50px; 
+  width: calc(hypot(100cqw, 100cqh) + 60px);
+  height: 50px;
+  top: 50%;
+  left: 50%;
   
   
   background: repeating-linear-gradient(
@@ -61,12 +66,13 @@ body {
 
 
 .tl-br {
-  transform: rotate(45deg);
+  
+  transform: translate(-50%, -50%) rotate(atan2(100cqh, 100cqw));
   z-index: 1;
 }
 
-
 .tr-bl {
-  transform: rotate(-45deg);
+
+  transform: translate(-50%, -50%) rotate(calc(-1 * atan2(100cqh, 100cqw)));
   z-index: 2;
 }
