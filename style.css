@@ -34,7 +34,7 @@ body {
 }
 
 .foreground>h1 {
-    font-size:x-large;
+    font-size:4rem;
     font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
